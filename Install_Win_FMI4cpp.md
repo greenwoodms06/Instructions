@@ -2,6 +2,9 @@
 
 This tutorial has been tested only with Visual Studio 2019 on Windows 10.
 
+## Additional Resources
+- https://docs.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=vs-2019
+
 # Prepare Directory
 1. Create the directory to store libraries. Well use `temp` for this example.
 ```
