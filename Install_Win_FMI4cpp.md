@@ -111,7 +111,7 @@ cd temp
 3. Right click the project and select `Properties` and make the following modifications.
    - Under `C/C++ > General > Additional Include Directories` set to 
         ```
-        C:\Users\vmg\Downloads\FMI4cpp\include
+        C:\PATH\temp\FMI4cpp\include
         ```
    - Under `C/C++ > Language > C++ Language Standard` set to 
         ```
@@ -119,7 +119,7 @@ cd temp
         ```
    - Under `Linker > General > Additional Library Dependencies` set to 
         ```
-        C:\Users\vmg\Downloads\FMI4cpp\lib
+        C:\PATH\temp\FMI4cpp\lib
         ```
    - Under `Linker > Input > Additional Dependencies` set to 
         ```
@@ -127,9 +127,9 @@ cd temp
         ```
    - Under `Build Event > Post-Build Event > Command Line` set to 
         ```
-        xcopy /y /d "C:\Users\vmg\Downloads\zlib\bin\zlibd.dll" "$(OutDir)"
-        xcopy /y /d "C:\Users\vmg\Downloads\libzip\bin\zip.dll" "$(OutDir)"
-        xcopy /y /d "C:\Users\vmg\Downloads\FMI4cpp\bin\fmi4cppd.dll" "$(OutDir)"
+        xcopy /y /d "C:\PATH\temp\zlib\zlib_1_2_11\bin\zlibd.dll" "$(OutDir)"
+        xcopy /y /d "C:\PATH\temp\libzip\bin\zip.dll" "$(OutDir)"
+        xcopy /y /d "C:\PATH\temp\FMI4cpp\bin\fmi4cppd.dll" "$(OutDir)"
         ```
 
 4. If not already created, add a new `.cpp` file and paste the following -(adapted from the FMI4cpp github site):
